@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
             spinner.setSelection(spr.getInt("position", 0));
         }
         countries.add(new Country("Anh", "Tiếng Anh", R.drawable.anh));
-        countries.add(new Country("Nhật", "Tiếng Nhật", R.drawable.china));
-        countries.add(new Country("Pháp", "Tiếng Pháp", R.drawable.vn));
+        countries.add(new Country("Nhật", "Tiếng Nhật", R.drawable.japan));
+        countries.add(new Country("Pháp", "Tiếng Pháp", R.drawable.franch));
         String[] ngonngu = new String[] {countries.get(0).getLanguage(), countries.get(1).getLanguage(),
                 countries.get(2).getLanguage()};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, ngonngu);
