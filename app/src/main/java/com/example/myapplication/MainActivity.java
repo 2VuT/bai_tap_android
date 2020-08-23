@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String itemPosition = locations[i].toString();
+                String itemPosition = listView.getItemAtPosition(i).toString();
 
                 Intent intent = new Intent(MainActivity.this, ItemActivity.class);
-
-                intent.putExtra("Listviewclickvalue", itemPosition);
+                intent.putExtra("value", itemPosition);
+                intent.putExtra("desc", "Some information about your destination!");
                 startActivity(intent);
             }
         });
